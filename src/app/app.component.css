@@ -1,0 +1,48 @@
+
+.round-circle {
+    background-color: #ffffff;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.profile-icon{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.profile-name{
+    color: #ffffff;
+}
+
+.profile-designation{
+    color: #FFC700; 
+    font-size: 0.6rem; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center ;
+}
+
+.nav-items{
+   display: block; 
+   margin: auto; 
+   text-align: center;
+   color: #ffffff !important;
+   font-size: 0.7rem !important;
+}
+
+.mat-icon-button{
+    border-radius: 0% !important;
+    background-color: #000000 !important;
+    outline: none !important;
+    color: white !important;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row{
+    background-color : #000000 !important;
+}

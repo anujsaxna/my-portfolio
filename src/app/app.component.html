@@ -1,0 +1,39 @@
+<mat-toolbar color="white" >
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button>
+    <header class="px-3">
+      <span style="font-weight: 600; color: white; font-size: 1.5rem;">anuj</span>
+      <span style="font-weight: 400; color: white; font-size: 1.5rem;">saxena</span>
+      <span style="font-weight: 600; color: #FFC700; font-size: 1.5rem;">.</span>
+    </header>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" style=" background-color: #000000; width: 15rem;"> 
+          <div class="round-circle mt-4">
+        <img src="../assets/images/Passport Pic.jpeg" class="profile-icon">
+        <label class="profile-name py-3 mb-0">Anuj K Saxena</label>
+      </div>
+    <mat-nav-list class="mt-5">
+      <label class="profile-designation mb-4">UI | UX Designer & FrontEnd Developer</label>
+      <mat-list-item> <a class="nav-items" > HOME  </a> </mat-list-item>
+      <mat-list-item> <a class="nav-items"> ABOUT US </a> </mat-list-item>
+      <mat-list-item> <a class="nav-items"> SKILL </a> </mat-list-item>
+      <mat-list-item> <a class="nav-items"> TOOLS </a> </mat-list-item>
+      <mat-list-item> <a class="nav-items"> ACCOMPLISHMENTS </a> </mat-list-item>
+      <mat-list-item> <a class="nav-items"> EXPERIENCE </a> </mat-list-item>
+      <mat-list-item> <a class="nav-items"> WORK </a> </mat-list-item>
+      <mat-list-item> <a class="nav-items"> CONTACT </a> </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div style="height: 100vh;">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
